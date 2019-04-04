@@ -18,8 +18,8 @@ import MenuIcon from '@material-ui/icons/Menu'
 import NotificationsIcon from '@material-ui/icons/Notifications'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 
-import MainMenuDrawer from './MainMenuDrawer'
-import Dashboard from './Dashboard'
+import MainMenuDrawer from 'components/MainMenuDrawer'
+import Dashboard from 'components/Dashboard'
 
 const drawerWidth = 240
 
