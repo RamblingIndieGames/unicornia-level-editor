@@ -20,6 +20,7 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 
 import MainMenuDrawer from 'components/MainMenuDrawer'
 import Dashboard from 'components/Dashboard'
+import PrefabEditor from 'components/PrefabEditor'
 
 const drawerWidth = 240
 
@@ -105,7 +106,7 @@ const App = ({
 }) => {
   const [ isDrawerOpen, setDrawerOpen ] = useState(true)
 
-  const [ activePage, setActivePage ] = useState('Dashboard')
+  const [ activePage, setActivePage ] = useState('Prefab Editor')
 
   const [ activeUsername ] = useState('Richard Marks')
 
@@ -166,6 +167,7 @@ const App = ({
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         {activePage === 'Dashboard' && <Dashboard />}
+        {activePage === 'Prefab Editor' && <PrefabEditor />}
       </main>
     </div>
   )
